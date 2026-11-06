@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QA Portfolio — Quality Engineer</title>
+  <meta name="description" content="QA portfolio showcasing Playwright UI/API automation, Postman, JMeter, and manual testing artifacts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="#top">QA<span>.</span>Portfolio</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Quality Engineer · Automation · Manual</p>
+      <h1>I break software on purpose — then prove it stays fixed.</h1>
+      <p class="lede">
+        Portfolio of real testing projects: Playwright UI &amp; API suites, Postman/Newman collections,
+        JMeter performance plans, and production-style manual QA docs (plans, RTM, bug reports).
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn ghost" href="https://github.com/YOUR_USERNAME/qa-portfolio" target="_blank" rel="noopener">GitHub repo</a>
+      </div>
+      <ul class="stat-row">
+        <li><strong>6</strong><span>portfolio projects</span></li>
+        <li><strong>12+</strong><span>UI E2E cases</span></li>
+        <li><strong>7</strong><span>EmpRadar findings</span></li>
+        <li><strong>RTM</strong><span>+ bug reports</span></li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Featured projects</h2>
+        <p>Each project is runnable. Clone the repo and follow the README in each folder.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="card">
+          <div class="card-tags">
+            <span>Playwright</span><span>TypeScript</span><span>POM</span>
+          </div>
+          <h3>UI E2E — Sauce Demo</h3>
+          <p>Page Object Model, fixtures, data-driven auth/cart/checkout flows, HTML + JUnit reports, smoke tags.</p>
+          <ul class="card-meta">
+            <li>Auth · Inventory · Checkout</li>
+            <li>Trace / screenshot / video on failure</li>
+          </ul>
+          <a class="card-link" href="../projects/playwright-ui/">Open project →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-tags">
+            <span>Playwright API</span><span>JSONPlaceholder</span><span>Booker</span>
+          </div>
+          <h3>API automation</h3>
+          <p>CRUD against JSONPlaceholder plus Restful Booker auth token chaining and negative credentials.</p>
+          <ul class="card-meta">
+            <li>Status · schema · cookie auth</li>
+            <li>Same reporter stack as UI</li>
+          </ul>
+          <a class="card-link" href="../projects/playwright-api/">Open project →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-tags">
+            <span>Postman</span><span>Newman</span>
+          </div>
+          <h3>API collection + CI</h3>
+          <p>Shareable Postman collection with test scripts, environment file, and Newman CLI for pipelines.</p>
+          <ul class="card-meta">
+            <li>Import-ready JSON</li>
+            <li>HTML / JUnit reporters</li>
+          </ul>
+          <a class="card-link" href="../projects/postman/">Open project →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-tags">
+            <span>JMeter</span><span>Performance</span>
+          </div>
+          <h3>Smoke &amp; load plan</h3>
+          <p>Thread groups, HTTP defaults, status + duration assertions, CLI instructions for HTML reports.</p>
+          <ul class="card-meta">
+            <li>SLA &lt; 2000 ms</li>
+            <li>Smoke enabled · load optional</li>
+          </ul>
+          <a class="card-link" href="../projects/jmeter/">Open project →</a>
+        </article>
+
+        <article class="card wide featured-case">
+          <div class="card-tags">
+            <span>Exploratory QA</span><span>Candidate Portal</span><span>Evidence</span>
+          </div>
+          <h3>EmpRadar — Candidate Applications case study</h3>
+          <p>
+            Candidate-facing testing across application listings, assessments, offers, employment
+            records, and bookmarks. Includes a structured finding log, coverage checklist, and
+            screenshot evidence, with employer-only ATS actions clearly marked out of scope.
+          </p>
+          <ul class="card-meta">
+            <li>14 areas reviewed · 7 findings documented</li>
+            <li>Expected vs actual · severity · status · evidence</li>
+          </ul>
+          <a class="card-link" href="empradar-case-study.html">Read case study →</a>
+        </article>
+
+        <article class="card wide">
+          <div class="card-tags">
+            <span>Manual QA</span><span>Documentation</span>
+          </div>
+          <h3>Test plan · cases · RTM · bugs · summary</h3>
+          <p>
+            How I work before automation: risk-based plan, scripted cases, requirements traceability,
+            severity-rated bug reports (including a whitespace validation defect), and a release-style summary.
+          </p>
+          <a class="card-link" href="../projects/manual-qa/">Open artifacts →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Replace placeholders with your years of experience and tools you actually use daily.</p>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <h4>Automation</h4>
+          <ul>
+            <li>Playwright (UI + API)</li>
+            <li>Postman / Newman</li>
+            <li>Selenium (familiar)</li>
+            <li>Page Object Model · fixtures</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Performance &amp; API</h4>
+          <ul>
+            <li>JMeter</li>
+            <li>REST · JSON assertions</li>
+            <li>Status / schema / auth flows</li>
+            <li>Basic SLA thinking (p95, errors)</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Manual &amp; process</h4>
+          <ul>
+            <li>Test plans &amp; cases</li>
+            <li>RTM · bug reports</li>
+            <li>Exploratory testing</li>
+            <li>Regression &amp; smoke strategy</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Engineering hygiene</h4>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>GitHub Actions CI</li>
+            <li>TypeScript / JavaScript</li>
+            <li>HTML reports &amp; JUnit</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="section-head">
+        <h2>How I test</h2>
+      </div>
+      <ol class="process">
+        <li>
+          <strong>Understand risk</strong>
+          <span>What can lose money, data, or trust? Those become P0.</span>
+        </li>
+        <li>
+          <strong>Document then automate</strong>
+          <span>Cases and RTM first; automate the stable, high-value paths.</span>
+        </li>
+        <li>
+          <strong>Assert like a product owner</strong>
+          <span>Not just “button clicked” — state, messages, APIs, and edge cases.</span>
+        </li>
+        <li>
+          <strong>Report clearly</strong>
+          <span>Repro steps, expected vs actual, severity, and a fix suggestion.</span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head">
+        <h2>Let’s talk quality</h2>
+        <p>Open to QA / SDET roles. Update the links below with your real contacts.</p>
+      </div>
+      <div class="contact-row">
+        <a class="btn primary" href="mailto:you@example.com">you@example.com</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/YOUR_PROFILE" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built as a living QA portfolio · Customize name, links, and metrics before sharing.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

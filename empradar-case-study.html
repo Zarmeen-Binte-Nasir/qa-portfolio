@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EmpRadar Candidate Applications — QA Case Study</title>
+  <meta
+    name="description"
+    content="Exploratory QA case study covering the EmpRadar candidate applications, assessments, offers, and bookmarked jobs experience."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">QA<span>.</span>Portfolio</a>
+    <nav aria-label="Case study navigation">
+      <a href="#scope">Scope</a>
+      <a href="#findings">Findings</a>
+      <a href="#artifacts">Artifacts</a>
+      <a href="index.html#projects">All projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero">
+      <a class="back-link" href="index.html#projects">← Back to projects</a>
+      <p class="eyebrow">Exploratory testing · Candidate portal · August 2026</p>
+      <h1>EmpRadar candidate applications case study</h1>
+      <p class="lede">
+        I tested the candidate-facing application journey across listings, assessments, offers,
+        employment records, bookmarked jobs, and related navigation. Findings were documented
+        with reproducible steps, expected versus actual behavior, severity, status, and evidence.
+      </p>
+
+      <ul class="stat-row case-stats">
+        <li><strong>14</strong><span>areas reviewed</span></li>
+        <li><strong>7</strong><span>findings documented</span></li>
+        <li><strong>2</strong><span>applications in test data</span></li>
+        <li><strong>Chrome</strong><span>Windows 10</span></li>
+      </ul>
+    </section>
+
+    <section id="scope" class="section">
+      <div class="section-head">
+        <h2>Scope and approach</h2>
+        <p>
+          Session-based exploratory testing using a candidate account. I compared related screens,
+          exercised available actions, checked empty and populated states, and captured evidence.
+        </p>
+      </div>
+
+      <div class="case-grid">
+        <article class="case-panel">
+          <h3>Covered</h3>
+          <ul>
+            <li>Application listing and table state</li>
+            <li>Application details navigation</li>
+            <li>Assessments and screening status</li>
+            <li>Offers and employment records</li>
+            <li>Bookmarked jobs and empty states</li>
+            <li>Candidate history and related navigation</li>
+          </ul>
+        </article>
+
+        <article class="case-panel scope-note">
+          <h3>Scope limitation</h3>
+          <p>
+            The available account had the candidate role. Employer-only ATS capabilities—including
+            pipeline boards, moving candidates between stages, shortlisting, rejection, and employer
+            bulk actions—were not functionally tested and are not claimed as defects.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="findings" class="section">
+      <div class="section-head">
+        <h2>Highlighted findings</h2>
+        <p>Two screening-flow inconsistencies were prioritized for follow-up.</p>
+      </div>
+
+      <div class="finding-list">
+        <article class="finding">
+          <div class="finding-head">
+            <span class="severity high">High</span>
+            <span class="finding-id">Screening</span>
+          </div>
+          <h3>Pending assessment count was inconsistent</h3>
+          <p>
+            The dashboard reported one pending assessment, while the Assessments page reported zero
+            pending items and a 100% completion rate.
+          </p>
+          <a
+            class="card-link"
+            href="../projects/manual-qa/artifacts/empradar/104-assess-compare-redacted.png"
+            target="_blank"
+            rel="noopener"
+          >View evidence →</a>
+        </article>
+
+        <article class="finding">
+          <div class="finding-head">
+            <span class="severity high">High</span>
+            <span class="finding-id">Navigation</span>
+          </div>
+          <h3>Assessment call-to-action did not reach the assessment list</h3>
+          <p>
+            Activating the dashboard assessment prompt left the candidate on the dashboard instead
+            of opening the relevant assessment experience.
+          </p>
+          <a
+            class="card-link"
+            href="../projects/manual-qa/artifacts/empradar/93-assessment-banner-redacted.png"
+            target="_blank"
+            rel="noopener"
+          >View evidence →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="artifacts" class="section">
+      <div class="section-head">
+        <h2>Project artifacts</h2>
+        <p>The public workbook contains a redacted finding log and coverage checklist.</p>
+      </div>
+
+      <div class="artifact-actions">
+        <a
+          class="btn primary"
+          href="../projects/manual-qa/bug-reports/EmpRadar_Candidate_Case_Study_REDACTED.xlsx"
+        >Download bug report</a>
+        <a
+          class="btn ghost"
+          href="../projects/manual-qa/artifacts/empradar/82-tab-all-redacted.png"
+          target="_blank"
+          rel="noopener"
+        >View applications evidence</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Exploratory QA exercise · Candidate data and authentication material excluded from publication.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
